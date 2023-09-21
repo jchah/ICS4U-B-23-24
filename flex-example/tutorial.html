@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            flex-direction: row-reverse;
+            height: 500px;
+            background-color: aqua;
+
+        }
+
+        .item {
+            border: solid 2px #333;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">
+            <div class="sub-item">A</div>
+            <div class="sub-item">B</div>
+            <div class="sub-item">C</div>
+        </div>
+    </div>
+</body>
+</html>

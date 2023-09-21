@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            color:white;
+            padding: 10px;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            color: aqua;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "navbar">
+        <a href="#" class = "item">Home</a>
+        <a href="#" class = "item">Services</a>
+        <a href="#" class = "item">About</a>
+        <a href="#" class = "item">Contact</a>
+    </div>
+    
+</body>
+</html>
