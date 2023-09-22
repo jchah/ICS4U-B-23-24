@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="grid-layout" />
+    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="index.html">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve1.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve10.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve11.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve12.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve13.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve14.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve15.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve16.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve17.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve18.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve19.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve2.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve20.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve21.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve22.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve23.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve24.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve3.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve4.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve5.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve6.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve7.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve8.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/eve9.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/pictures.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid-layout/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid-layout/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,28 +60,38 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2VLZ6VUhE9ClCkrvu24OAmpcSAR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "<unknown>",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jchah/IdeaProjects/ICS4U-B-23-24/grid-layout/img&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jchah\IdeaProjects\ICS4U-B-23-24\grid-layout\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jchah\IdeaProjects\ICS4U-B-23-24\grid-layout" />
+      <recent name="C:\Users\jchah\IdeaProjects\ICS4U-B-23-24\grid-layout\img" />
       <recent name="C:\Users\jchah\IdeaProjects\ICS4U-B-23-24\acme\img" />
     </key>
   </component>
@@ -64,7 +106,9 @@
       <workItem from="1694617150336" duration="948000" />
       <workItem from="1694781993290" duration="2318000" />
       <workItem from="1695127017263" duration="4235000" />
-      <workItem from="1695299872176" duration="1623000" />
+      <workItem from="1695299872176" duration="7248000" />
+      <workItem from="1695308784223" duration="3948000" />
+      <workItem from="1695337152727" duration="333000" />
     </task>
     <task id="LOCAL-00001" summary="rgba -&gt; 0, 0, 0, 2">
       <option name="closed" value="true" />
@@ -82,15 +126,34 @@
       <option name="project" value="LOCAL" />
       <updated>1695301041909</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="removed comment">
+      <option name="closed" value="true" />
+      <created>1695301745241</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695301745241</updated>
+    </task>
+    <task id="LOCAL-00004" summary="index.html">
+      <option name="closed" value="true" />
+      <created>1695304174538</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695304174538</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="rgba -&gt; 0, 0, 0, 2" />
     <MESSAGE value="grid-layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="grid-layout" />
+    <MESSAGE value="removed comment" />
+    <MESSAGE value="index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.html" />
   </component>
 </project>
