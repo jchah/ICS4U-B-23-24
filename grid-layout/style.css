@@ -1,7 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 a {
@@ -25,10 +35,6 @@ li {
     color: #fff;
 }
 
-.logo {
-    font-size: 32px;
-}
-
 .menu {
     display: flex;
     gap: 1em;
@@ -43,10 +49,6 @@ li {
 
 .menu li {
     padding: 5px 14px;
-}
-
-.services {
-    position: relative;
 }
 
 .dropdown {
@@ -215,15 +217,6 @@ body {
     background-color: #4c9e9e;
 }
 
-.about-content {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 .about-content h3 {
     font-size: 24px;
     color: teal;
@@ -247,23 +240,7 @@ body {
     width: 80%;
 }
 
-.story h3,
-.mission h3 {
-    font-size: 24px;
-    color: teal;
-    margin-bottom: 10px;
-}
-
-.story-section,
-.mission-section {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.story-heading,
-.mission-heading {
+.heading {
     font-weight: bold;
 }
 
@@ -308,43 +285,17 @@ body {
     background-color: #4c9e9e;
 }
 
-.section {
-    padding: 20px;
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-}
-
-.section h2 {
-    font-size: 24px;
-    color: teal;
-    margin-bottom: 10px;
-}
-
-.section:hover {
-    background-color: #e0e0e0;
-    transition: background-color 0.3s ease;
-}
-
 .image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 10px;
 }
 
 .image-grid img {
-    width: calc(25% - 10px);
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.image-grid img:not(:last-child) {
-    margin-right: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .image-grid img:hover {
