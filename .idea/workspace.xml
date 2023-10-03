@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="grid-layout">
-      <change afterPath="$PROJECT_DIR$/grid-layout/apartments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid-layout/modern.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid-layout/traditional.html" afterDir="false" />
+    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="Functional hamburger menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid-layout/apartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/apartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid-layout/modern.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/modern.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid-layout/traditional.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/traditional.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +103,8 @@
       <workItem from="1695337152727" duration="333000" />
       <workItem from="1695337610114" duration="11474000" />
       <workItem from="1695647190815" duration="2593000" />
+      <workItem from="1695818536141" duration="4847000" />
+      <workItem from="1696338436310" duration="2093000" />
     </task>
     <task id="LOCAL-00001" summary="rgba -&gt; 0, 0, 0, 2">
       <option name="closed" value="true" />
@@ -144,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695349043021</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1695818660315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695818660315</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +166,8 @@
     <MESSAGE value="removed comment" />
     <MESSAGE value="index.html" />
     <MESSAGE value="grid-layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="grid-layout" />
+    <MESSAGE value="update" />
+    <MESSAGE value="Functional hamburger menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functional hamburger menu" />
   </component>
 </project>

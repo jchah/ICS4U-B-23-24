@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Home - LuxLivingSpaces.com</title>
 </head>
 <body>
 <!-- The navigation bar -->
-<nav class="navbar">
+<section class="navbar">
     <div class="logo">LuxLivingSpaces.com</div>
-    <div class="nav-links">
-        <div class="menu">
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+        <span class='menu-button'></span>
+    </label>
+        <ul class="menu">
             <!-- Navigation links -->
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -35,9 +37,8 @@
                 </ul>
             </li>
             <li><a href="contact.html">Contact Us</a></li>
-        </div>
-    </div>
-</nav>
+        </ul>
+</section>
 
 <!-- Content section -->
 <div class="content">
