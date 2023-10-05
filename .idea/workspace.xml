@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="Functional hamburger menu">
+      <change afterPath="$PROJECT_DIR$/grid-layout/generateImageGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/ap12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/ap9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/modern4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid-layout/img/modern9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ICS4U-B-23-24.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ICS4U-B-23-24.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/apartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/apartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid-layout/img/ap12.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid-layout/img/ap9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid-layout/img/modern4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid-layout/img/modern9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/modern.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/modern.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid-layout/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/style.css" afterDir="false" />
@@ -22,9 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -67,7 +78,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jchah/IdeaProjects/ICS4U-B-23-24/grid-layout/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jchah/Downloads/ics4u-main/ics4u-main/website project&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -104,7 +115,10 @@
       <workItem from="1695337610114" duration="11474000" />
       <workItem from="1695647190815" duration="2593000" />
       <workItem from="1695818536141" duration="4847000" />
-      <workItem from="1696338436310" duration="2093000" />
+      <workItem from="1696338436310" duration="2803000" />
+      <workItem from="1696443937786" duration="245000" />
+      <workItem from="1696508841952" duration="2249000" />
+      <workItem from="1696512039638" duration="8287000" />
     </task>
     <task id="LOCAL-00001" summary="rgba -&gt; 0, 0, 0, 2">
       <option name="closed" value="true" />
@@ -154,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695818660315</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Functional hamburger menu">
+      <option name="closed" value="true" />
+      <created>1696340659926</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696340659926</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

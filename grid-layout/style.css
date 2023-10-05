@@ -63,6 +63,7 @@ li {
     position: absolute;
     display: none;
     border-radius: 8px;
+    z-index: 1;
 }
 
 .dropdown li + li {
@@ -93,6 +94,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -160,6 +162,7 @@ body {
         width: 100%;
         justify-content: center;
         align-items: center;
+        z-index: 1;
     }
     #menu-toggle ~ .menu li {
         height: 0;
@@ -220,7 +223,7 @@ body {
 .welcome-heading h2 {
     font-size: 36px;
     font-weight: bold;
-    color: teal;
+    color: orange;
     margin-top: 10px;
 }
 
@@ -235,7 +238,7 @@ body {
 
 .feature-box h3 {
     font-size: 24px;
-    color: teal;
+    color: orange;
     margin-bottom: 10px;
 }
 
@@ -271,7 +274,7 @@ body {
 
 .benefits-box h3 {
     font-size: 24px;
-    color: teal;
+    color: orange;
     margin-bottom: 10px;
 }
 
@@ -297,7 +300,7 @@ body {
 
 .contact-box h3 {
     font-size: 24px;
-    color: teal;
+    color: orange;
     margin-bottom: 10px;
 }
 
@@ -309,7 +312,7 @@ body {
 
 .contact-box .btn {
     display: inline-block;
-    background-color: teal;
+    background-color: orange;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -323,7 +326,7 @@ body {
 
 .about-content h3 {
     font-size: 24px;
-    color: teal;
+    color: orange;
     margin-bottom: 10px;
 }
 
@@ -349,9 +352,9 @@ body {
 }
 
 .contact-form {
-    background-color: #f7f7f7;
+    background-color: #f0f0f0;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
     text-align: left;
     margin-top: 20px;
@@ -372,12 +375,12 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 .contact-form input[type="submit"] {
-    background-color: teal;
+    background-color: #00BAF0; /* Change the button color */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -386,14 +389,20 @@ body {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #4c9e9e;
+    background-color: #f46b45; /* Change the button color on hover */
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin: 10px;
+    position: relative;
+    z-index: 0;
+    transition: box-shadow 0.3s;
+}
+
+.image-container {
+    position: relative;
 }
 
 .image-grid img {
@@ -403,6 +412,62 @@ body {
 }
 
 .image-grid img:hover {
+    box-shadow: 0 0 0 10px gold;
+}
+
+.image-container button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 2% 4%;
+    border-radius: 5px;
+}
+
+.image-container button:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
+    color: gold;
+}
+
+.price-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 2% 4%;
+    border-radius: 5px;
+}
+
+@media (min-width: 1200px) {
+    .image-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+    }
+}
+
+@media (max-width: 1199px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium-sized screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for the smallest screens */
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
 }
