@@ -4,26 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="Functional hamburger menu">
-      <change afterPath="$PROJECT_DIR$/grid-layout/generateImageGrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid-layout/img/ap12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid-layout/img/ap9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid-layout/img/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid-layout/img/modern4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grid-layout/img/modern9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ICS4U-B-23-24.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ICS4U-B-23-24.iml" afterDir="false" />
+    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="Readjusts image grid on window resize, loads images using javascript, navbar fixes hamburger menu and dropdown, style changed (to be continued)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/apartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/apartments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/img/ap12.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/img/ap9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/img/modern4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/img/modern9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/modern.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/modern.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid-layout/traditional.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid-layout/traditional.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -118,7 +100,10 @@
       <workItem from="1696338436310" duration="2803000" />
       <workItem from="1696443937786" duration="245000" />
       <workItem from="1696508841952" duration="2249000" />
-      <workItem from="1696512039638" duration="8287000" />
+      <workItem from="1696512039638" duration="10936000" />
+      <workItem from="1696947601121" duration="2051000" />
+      <workItem from="1697025163945" duration="6000" />
+      <workItem from="1697025854983" duration="401000" />
     </task>
     <task id="LOCAL-00001" summary="rgba -&gt; 0, 0, 0, 2">
       <option name="closed" value="true" />
@@ -176,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696340659926</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Readjusts image grid on window resize, loads images using javascript, navbar fixes hamburger menu and dropdown, style changed (to be continued)">
+      <option name="closed" value="true" />
+      <created>1696533025303</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696533025303</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +183,7 @@
     <MESSAGE value="grid-layout" />
     <MESSAGE value="update" />
     <MESSAGE value="Functional hamburger menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functional hamburger menu" />
+    <MESSAGE value="Readjusts image grid on window resize, loads images using javascript, navbar fixes hamburger menu and dropdown, style changed (to be continued)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readjusts image grid on window resize, loads images using javascript, navbar fixes hamburger menu and dropdown, style changed (to be continued)" />
   </component>
 </project>

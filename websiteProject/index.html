@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chess Tournament</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="navbar" id="navbar">
+    <a href="#home" class="navbar-button">Home</a>
+    <a href="#about" class="navbar-button">About</a>
+    <a href="#store" class="navbar-button">Store</a>
+    <a href="#contact" class="navbar-button">Contact</a>
+    <a class="icon" onclick="toggleNavbar()">&#9776;</a>
+</div>
+
+<section class="container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img id="slide-1" src="img/tournament.jpg"  alt=""/>
+            <img id="slide-2" src="img/tournament1.jpg"  alt=""/>
+            <img id="slide-3" src="img/tournament2.jpg"  alt=""/>
+            <img id="slide-4" src="img/tournament3.jpg"  alt=""/>
+            <img id="slide-5" src="img/tournament4.jpg"  alt=""/>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+        </div>
+    </div>
+</section>
+
+<div class="navigation-button">
+    <span class="dot active" onclick="changeSlide(0)"></span>
+    <span class="dot" onclick="changeSlide(1)"></span>
+    <span class="dot" onclick="changeSlide(2)"></span>
+</div>
+
+<div class="club-activities">
+    <h2>Club Activities</h2>
+    <div class="activity">
+        <img src="img/Tournament_icon.jpg" alt="">
+        <h3>Tournaments</h3>
+        <strong>
+            We run five-week CFC/FIDE-rated competitive tournaments on Monday evenings starting at 7:30 p.m.
+        </strong>
+        <p>
+            We typically have three sections of players - Crown, U1800, and U1400. Players  must have a valid CFC membership which they can purchase from our STORE.
+        </p>
+        <p>
+            Time control is 90+30. Drop-in and membership options are available.
+        </p>
+    </div>
+    <div class="activity">
+        <img src="img/Casual_icon.jpg" alt="">
+        <h3>Casual Chess</h3>
+        <strong>
+            Our casual area (skittles room) opens at 6:30 and accommodates 24 players.
+        </strong>
+        <p>
+            Kibitzing and quiet conversation are welcome.
+        </p>
+
+        <p>
+            ACC students and tournament players are welcome.
+        </p>
+        <p>
+            Our nightly casual drop-in fee is $10+HST payable at the front desk. Casual memberships are also available.
+        </p>
+    </div>
+    <div class="activity">
+        <img src="img/Class_icon.jpg" alt="">
+        <h3>Classes</h3>
+        <strong>
+            We have both in-person and online chess classes and courses for players of any age or skill level.
+        </strong>
+
+        <p>
+            Each class involves a mix of lecture, discussion and play.
+        </p>
+
+        <p>
+            In-person classes are held at 918 Bathurst on Monday evenings starting at 5:00.
+        </p>
+
+        <p>
+            Online classes currently run on Tuesday and Thursday evenings.
+        </p>
+    </div>
+    <div class="activity">
+        <img src="img/Special_icon.jpg" alt="">
+        <h3>Special Events</h3>
+        <p>We run several special events throughout the year.
+
+            Our upcoming events are the:
+
+            2023 Toronto Women's Closed Championship (new time and start date!)
+
+            ACC Halloween Rapid
+
+
+
+            We periodically run GM/IM norm events  (e.g. our recent Canadian Transnational Chess Championship).
+        </p>
+    </div>
+</div>
+
+<div class="membership">
+    <h2>Benefits of Being a Member</h2>
+    <ul>
+        <li>Access to exclusive chess events</li>
+        <li>Discounts on classes and tournaments</li>
+        <li>Community of passionate chess players</li>
+    </ul>
+    <a class="join-button" href="#join">Join Now</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

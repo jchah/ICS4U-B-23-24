@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const priceOverlay = document.createElement("div");
         priceOverlay.classList.add("price-overlay");
-        priceOverlay.textContent = "$_______";
+        let randPrice = Math.floor(Math.random() * (5000000 - 1000000 + 1) + 1000000)
+        priceOverlay.textContent = "$" + randPrice;
 
         const button = document.createElement("button");
         button.textContent = "Contact Seller";
