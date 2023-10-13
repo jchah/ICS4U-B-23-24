@@ -41,9 +41,9 @@ li {
     color: #FFF;
     height: 50px;
     padding: 1em;
-    background: linear-gradient(45deg, #333, #555, #777, #999, #BBB);
-    background-size: 200% 200%;
-    animation: marbled 10s infinite alternate;
+    background: linear-gradient(45deg, #222, #333, #444, #555, #666);
+    background-size: 400% 400%;
+    animation: marbled 6s infinite alternate;
 }
 
 .menu {
@@ -57,7 +57,7 @@ li {
 }
 
 .menu a {
-    color: white; /* Change the color to white or any desired color */
+    color: lightgray; /* Change the color to white or any desired color */
 }
 
 .menu li:hover {
@@ -72,14 +72,17 @@ li {
 }
 
 .dropdown {
-    background: linear-gradient(45deg, #333, #555, #777, #999, #BBB);
+    background: #333;
     background-size: 200% 200%;
-    animation: marbled 10s infinite alternate;
     padding: 1em 0;
     position: absolute;
     display: none;
     border-radius: 8px;
     z-index: 1;
+}
+
+.dropdown a{
+    color: lightgray;
 }
 
 .dropdown li + li {
@@ -385,29 +388,6 @@ body {
 
 .contact-box .btn:hover {
     background-color: #4c9e9e;
-}
-
-.about-content h3 {
-    font-size: 24px;
-    color:#222;
-    margin-bottom: 10px;
-}
-
-.about-content p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-}
-
-.story,
-.mission {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: left;
-    margin: 20px;
-    width: 80%;
 }
 
 .heading {
