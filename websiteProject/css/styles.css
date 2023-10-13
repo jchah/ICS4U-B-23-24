@@ -542,10 +542,9 @@ footer {
     border-radius: 10px;
 }
 
-/* Define a media query for smaller screens */
 @media (max-width: 768px) {
     .cover {
-        width: 80%; /* Adjust the width as needed for smaller screens */
+        width: 80%;
     }
 
     .cover img {

@@ -1,122 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Chess Tournament</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-<div class="navbar" id="navbar">
-    <a href="#home" class="navbar-button">Home</a>
-    <a href="#about" class="navbar-button">About</a>
-    <a href="#store" class="navbar-button">Store</a>
-    <a href="#contact" class="navbar-button">Contact</a>
-    <a class="icon" onclick="toggleNavbar()">&#9776;</a>
-</div>
+<!-- Commented using ChatGPT -->
 
-<section class="container">
-    <div class="slider-wrapper">
-        <div class="slider">
-            <img id="slide-1" src="img/tournament.jpg"  alt=""/>
-            <img id="slide-2" src="img/tournament1.jpg"  alt=""/>
-            <img id="slide-3" src="img/tournament2.jpg"  alt=""/>
-            <img id="slide-4" src="img/tournament3.jpg"  alt=""/>
-            <img id="slide-5" src="img/tournament4.jpg"  alt=""/>
-        </div>
-        <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
-            <a href="#slide-5"></a>
-        </div>
-    </div>
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+
+<html lang="en"> <!-- The root HTML element with language attribute set to English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport for responsive design -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Links to an external CSS file for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Links to an external Font Awesome stylesheet for icons -->
+    <link rel="icon" href="img/webpage-icon.png" type="image/x-icon"/>
+
+    <title>Home - LuxLivingSpaces.com</title> <!-- Sets the title of the web page -->
+</head>
+
+<body>
+<!-- The navigation bar -->
+<section class="navbar"> <!-- Defines the navigation bar section -->
+    <div class="logo"><a href="index.html" class="logo-link">LuxLivingSpaces.com</a></div> <!-- Logo and link to the homepage -->
+    <input id="menu-toggle" type="checkbox" /> <!-- Checkbox input for mobile menu toggle -->
+    <label class='menu-button-container' for="menu-toggle"> <!-- Label for the mobile menu toggle button -->
+        <span class='menu-button'></span> <!-- Span element for the mobile menu button -->
+    </label>
+    <ul class="menu"> <!-- Unordered list for navigation links -->
+        <!-- Navigation links -->
+        <li><a href="about.html">About</a></li> <!-- Link to the "About" page -->
+        <li class="services">
+            <a>Styles</a>
+            <!-- Dropdown for Styles -->
+            <ul class="dropdown"> <!-- Unordered list for the dropdown menu -->
+                <li><a href="modern.html">Modern</a></li> <!-- Link to the "Modern" page -->
+                <li><a href="traditional.html">Traditional</a></li> <!-- Link to the "Traditional" page -->
+                <li><a href="apartments.html">Apartments</a></li> <!-- Link to the "Apartments" page -->
+            </ul>
+        </li>
+        <li class="services">
+            <a>Socials</a>
+            <!-- Dropdown for Social Links -->
+            <ul class="dropdown"> <!-- Unordered list for the social links dropdown menu -->
+                <li><a href="https://reddit.com">Reddit</a></li> <!-- Link to Reddit -->
+                <li><a href="https://pinterest.com">Pinterest</a></li> <!-- Link to Pinterest -->
+                <li><a href="https://linkedin.com">Linkedin</a></li> <!-- Link to LinkedIn -->
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li> <!-- Link to the "Contact Us" page -->
+    </ul>
 </section>
 
-<div class="navigation-button">
-    <span class="dot active" onclick="changeSlide(0)"></span>
-    <span class="dot" onclick="changeSlide(1)"></span>
-    <span class="dot" onclick="changeSlide(2)"></span>
-</div>
-
-<div class="club-activities">
-    <h2>Club Activities</h2>
-    <div class="activity">
-        <img src="img/Tournament_icon.jpg" alt="">
-        <h3>Tournaments</h3>
-        <strong>
-            We run five-week CFC/FIDE-rated competitive tournaments on Monday evenings starting at 7:30 p.m.
-        </strong>
-        <p>
-            We typically have three sections of players - Crown, U1800, and U1400. Players  must have a valid CFC membership which they can purchase from our STORE.
-        </p>
-        <p>
-            Time control is 90+30. Drop-in and membership options are available.
-        </p>
+<!-- Content section -->
+<div class="content"> <!-- Defines the main content section of the webpage -->
+    <!-- Welcome heading -->
+    <div class="welcome-heading"> <!-- Container for the welcome heading -->
+        <h1>Welcome to Lux Living Spaces<span>An architect's dream</span></h1> <!-- Main heading and a subheading -->
     </div>
-    <div class="activity">
-        <img src="img/Casual_icon.jpg" alt="">
-        <h3>Casual Chess</h3>
-        <strong>
-            Our casual area (skittles room) opens at 6:30 and accommodates 24 players.
-        </strong>
-        <p>
-            Kibitzing and quiet conversation are welcome.
-        </p>
+    <!-- Feature box -->
+    <div class="feature-box"> <!-- Container for a feature box -->
+        <div class="cover"> <!-- Container for an image -->
+            <img src="img/cover.jpg" alt="Drawing of modern house"> <!-- Image with alternative text -->
+        </div>
 
-        <p>
-            ACC students and tournament players are welcome.
-        </p>
-        <p>
-            Our nightly casual drop-in fee is $10+HST payable at the front desk. Casual memberships are also available.
-        </p>
+        <h3>Explore Luxurious Living</h3> <!-- Heading for the feature box -->
+        <p>Step into a world of elegance and sophistication. Our luxurious living spaces redefine comfort and style.</p> <!-- Text description for the feature box -->
     </div>
-    <div class="activity">
-        <img src="img/Class_icon.jpg" alt="">
-        <h3>Classes</h3>
-        <strong>
-            We have both in-person and online chess classes and courses for players of any age or skill level.
-        </strong>
-
-        <p>
-            Each class involves a mix of lecture, discussion and play.
-        </p>
-
-        <p>
-            In-person classes are held at 918 Bathurst on Monday evenings starting at 5:00.
-        </p>
-
-        <p>
-            Online classes currently run on Tuesday and Thursday evenings.
-        </p>
+    <!-- Quote box -->
+    <div class="quote-box"> <!-- Container for a quote box -->
+        <blockquote>
+            "Luxury is in each detail. It's about creating a space where you can truly live your dreams."
+        </blockquote> <!-- Quoted text -->
+        <p>- John Doe, Interior Designer</p> <!-- Attribution for the quote -->
     </div>
-    <div class="activity">
-        <img src="img/Special_icon.jpg" alt="">
-        <h3>Special Events</h3>
-        <p>We run several special events throughout the year.
-
-            Our upcoming events are the:
-
-            2023 Toronto Women's Closed Championship (new time and start date!)
-
-            ACC Halloween Rapid
-
-
-
-            We periodically run GM/IM norm events  (e.g. our recent Canadian Transnational Chess Championship).
-        </p>
+    <!-- Benefits box -->
+    <div class="benefits-box"> <!-- Container for a benefits box -->
+        <h3>Why Choose Us?</h3> <!-- Heading for the benefits section -->
+        <ul>
+            <li>Exquisite Interior Designs</li> <!-- List of benefits -->
+            <li>Premium Quality Materials</li>
+            <li>Exceptional Customer Service</li>
+            <li>Affordable Luxury</li>
+        </ul>
+    </div>
+    <!-- Contact box -->
+    <div class="contact-box"> <!-- Container for the contact box -->
+        <h3>Contact Us</h3> <!-- Heading for the contact section -->
+        <p>Ready to turn your dream home into reality? Contact our team of experts today to get started.</p> <!-- Contact information and message -->
+        <a href="contact.html" class="btn">Get in Touch</a> <!-- Button to link to the "Contact Us" page -->
     </div>
 </div>
 
-<div class="membership">
-    <h2>Benefits of Being a Member</h2>
-    <ul>
-        <li>Access to exclusive chess events</li>
-        <li>Discounts on classes and tournaments</li>
-        <li>Community of passionate chess players</li>
-    </ul>
-    <a class="join-button" href="#join">Join Now</a>
-</div>
-
-<script src="script.js"></script>
+<footer>
+    <p>&copy; 2023 LuxLivingSpaces.com</p> <!-- Copyright notice -->
+    <a href="https://linkedin.com" class="fa fa-linkedin"></a> <!-- Social media icon/link for LinkedIn -->
+    <a href="https://pinterest.com" class="fa fa-pinterest"></a> <!-- Social media icon/link for Pinterest -->
+    <a href="https://reddit.com" class="fa fa-reddit"></a> <!-- Social media icon/link for Reddit -->
+</footer>
 </body>
 </html>
