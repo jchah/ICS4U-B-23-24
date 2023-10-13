@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="moved js file">
-      <change afterPath="$PROJECT_DIR$/websiteProject/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websiteProject/img/john.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websiteProject/img/mike.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ICS4U-B-23-24.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ICS4U-B-23-24.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="about page update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websiteProject/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProject/apartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/apartments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProject/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websiteProject/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProject/modern.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/modern.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProject/traditional.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/traditional.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <workItem from="1696947601121" duration="2051000" />
       <workItem from="1697025163945" duration="6000" />
       <workItem from="1697025854983" duration="401000" />
-      <workItem from="1697143820276" duration="16785000" />
+      <workItem from="1697143820276" duration="18908000" />
     </task>
     <task id="LOCAL-00001" summary="rgba -&gt; 0, 0, 0, 2">
       <option name="closed" value="true" />
@@ -212,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697161911406</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="about page update">
+      <option name="closed" value="true" />
+      <created>1697205721207</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697205721207</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +239,7 @@
     <MESSAGE value="Massive colour font overhaul. Added photos. Added social media icons in footer. Small changes." />
     <MESSAGE value="Added icon, changed name, fixed some warnings." />
     <MESSAGE value="moved js file" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved js file" />
+    <MESSAGE value="about page update" />
+    <option name="LAST_COMMIT_MESSAGE" value="about page update" />
   </component>
 </project>

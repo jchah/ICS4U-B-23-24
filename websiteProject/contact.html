@@ -1,50 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- The root HTML element with language attribute set to English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - LuxLivingSpaces.com</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/form-css.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" href="img/webpage-icon.png" type="image/x-icon"/>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport for responsive design -->
+    <title>Contact Us - LuxLivingSpaces.com</title> <!-- Sets the title of the web page -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Links to an external CSS file for styling -->
+    <link rel="stylesheet" href="css/form-css.css"> <!-- Links to a specific CSS file for styling the contact form -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!-- Links to an external Font Awesome stylesheet for icons -->
+    <link rel="icon" href="img/webpage-icon.png" type="image/x-icon"/> <!-- Sets the website's favicon -->
 </head>
 
 <body>
 <!-- Navigation bar (copied from index.html) -->
-<section class="navbar">
-    <div class="logo"><a href="index.html" class="logo-link">LuxLivingSpaces.com</a></div>
-    <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
-        <span class='menu-button'></span>
+<section class="navbar"> <!-- Defines the navigation bar section -->
+    <div class="logo"><a href="index.html" class="logo-link">LuxLivingSpaces.com</a></div> <!-- Logo and link to the homepage -->
+    <input id="menu-toggle" type="checkbox" /> <!-- Checkbox input for mobile menu toggle -->
+    <label class='menu-button-container' for="menu-toggle"> <!-- Label for the mobile menu toggle button -->
+        <span class='menu-button'></span> <!-- Span element for the mobile menu button -->
     </label>
-    <ul class="menu">
+    <ul class="menu"> <!-- Unordered list for navigation links -->
         <!-- Navigation links -->
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">About</a></li> <!-- Link to the "About" page -->
         <li class="services">
             <a>Styles</a>
             <!-- Dropdown for Styles -->
-            <ul class="dropdown">
-                <li><a href="modern.html">Modern</a></li>
-                <li><a href="traditional.html">Traditional</a></li>
-                <li><a href="apartments.html">Apartments</a></li>
+            <ul class="dropdown"> <!-- Unordered list for the dropdown menu -->
+                <li><a href="modern.html">Modern</a></li> <!-- Link to the "Modern" page -->
+                <li><a href="traditional.html">Traditional</a></li> <!-- Link to the "Traditional" page -->
+                <li><a href="apartments.html">Apartments</a></li> <!-- Link to the "Apartments" page -->
             </ul>
         </li>
         <li class="services">
             <a>Socials</a>
             <!-- Dropdown for Social Links -->
-            <ul class="dropdown">
-                <li><a href="https://reddit.com">Reddit</a></li>
-                <li><a href="https://pinterest.com">Pinterest</a></li>
-                <li><a href="https://linkedin.com">Linkedin</a></li>
+            <ul class="dropdown"> <!-- Unordered list for the social links dropdown menu -->
+                <li><a href="https://reddit.com">Reddit</a></li> <!-- Link to Reddit -->
+                <li><a href="https://pinterest.com">Pinterest</a></li> <!-- Link to Pinterest -->
+                <li><a href="https://linkedin.com">Linkedin</a></li> <!-- Link to LinkedIn -->
             </ul>
         </li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li> <!-- Link to the "Contact Us" page -->
     </ul>
 </section>
 
 <div id="container">
-    <h1>Reach out to our team of world-class architects</h1>
+    <h1>Reach out to our team of world-class architects</h1> <!-- Heading for the contact page -->
     <div class="underline">
     </div>
     <div class="icon_wrapper">
@@ -52,7 +52,7 @@
             <path d="M132.843,64.942l-60.826-60.827c-3.125-3.125-8.189-3.125-11.314,0L12.349,64.942c-3.125,3.125-3.125,8.189,0,11.314 c3.125,3.125,8.189,3.125,11.314,0l2.828-2.828v63.314c0,4.418,3.582,8,8,8h85.657c4.418,0,8-3.582,8-8v-63.314l2.828,2.828 c1.562,1.562,3.609,2.343,5.657,2.343s4.095-0.781,5.657-2.343C135.968,73.131,135.968,68.067,132.843,64.942z M73.716,128.94H71.349 v-8.314c0-4.418-3.582-8-8-8s-8,3.582-8,8v8.314h-2.366V97.228l21.598-21.598l21.598,21.598v31.712H73.716z"/>
         </svg>
     </div>
-    <form action="#" method="post" id="contact_form">
+    <form action="#" method="post" id="contact_form"> <!-- Contact form -->
         <div class="name">
             <label for="name_input"></label><input type="text" placeholder="My name is" name="name" id="name_input" required>
         </div>
@@ -76,18 +76,16 @@
             <label for="message_input"></label><textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
         </div>
         <div class="submit">
-            <input type="submit" value="Send Message" id="form_button" />
+            <input type="submit" value="Send Message" id="form_button" /> <!-- Submit button for the form -->
         </div>
     </form><!-- // End form -->
 </div><!-- // End #container -->
 
-
 <footer>
-    <p>&copy; 2023 LuxLivingSpaces.com</p>
-
-    <a href="https://linkedin.com" class="fa fa-linkedin"></a>
-    <a href="https://pinterest.com" class="fa fa-pinterest"></a>
-    <a href="https://reddit.com" class="fa fa-reddit"></a>
+    <p>&copy; 2023 LuxLivingSpaces.com</p> <!-- Copyright notice -->
+    <a href="https://linkedin.com" class="fa fa-linkedin"></a> <!-- Social media icon/link for LinkedIn -->
+    <a href="https://pinterest.com" class="fa fa-pinterest"></a> <!-- Social media icon/link for Pinterest -->
+    <a href="https://reddit.com" class="fa fa-reddit"></a> <!-- Social media icon/link for Reddit -->
 </footer>
 
 </body>

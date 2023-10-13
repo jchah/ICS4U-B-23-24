@@ -1,3 +1,4 @@
+/* Remove default webkit scrollbar styles */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -14,16 +15,17 @@
     background: #555;
 }
 
+/* Remove text decoration for all links */
 a {
     text-decoration: none;
 }
 
+/* Remove list-style for all list items */
 li {
     list-style: none;
 }
 
-/* really cool animation thing */
-
+/* Define a keyframe animation called "marbled" */
 @keyframes marbled {
     0% {
         background-position: 0 0;
@@ -33,6 +35,7 @@ li {
     }
 }
 
+/* Styles for the navigation bar */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -46,6 +49,7 @@ li {
     animation: marbled 6s infinite alternate;
 }
 
+/* Styles for the menu links */
 .menu {
     font-family: serif;
     font-size: 20px;
@@ -71,6 +75,7 @@ li {
     overflow: hidden;
 }
 
+/* Styles for the dropdown menu */
 .dropdown {
     background: #333;
     background-size: 200% 200%;
@@ -81,7 +86,7 @@ li {
     z-index: 1;
 }
 
-.dropdown a{
+.dropdown a {
     color: lightgray;
 }
 
@@ -99,15 +104,18 @@ li {
     background-color: #999999;
 }
 
+/* Display the dropdown on hover */
 .services:hover .dropdown {
     top: 50px;
     display: block;
 }
 
+/* Hide checkbox input */
 input[type=checkbox] {
     display: none;
 }
 
+/* Basic body styles */
 body {
     margin: 0;
     padding: 0;
@@ -115,6 +123,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Styles for the logo */
 .logo {
     font-family: Garamond, serif;
     font-size: 24px;
@@ -122,10 +131,11 @@ body {
 }
 
 .logo-link {
-    text-decoration: none; /* Remove text underline */
-    color: inherit; /* Inherit the text color (you can specify a color here) */
+    text-decoration: none;
+    color: inherit;
 }
 
+/* Styles for the mobile menu button */
 .menu-button-container {
     display: none;
     height: 100%;
@@ -147,16 +157,19 @@ body {
     position: relative;
 }
 
+/* Styles for the menu button bars */
 .menu-bar {
     width: 30px;
     height: 4px;
     background-color: #fff;
 }
 
+/* Styles for the menu toggle */
 #menu-toggle {
     display: none;
 }
 
+/* Styles for the menu button animation on checked state */
 #menu-toggle:checked + .menu-button-container .menu-button::before {
     margin-top: 0;
     transform: rotate(405deg);
@@ -171,6 +184,7 @@ body {
     transform: rotate(-405deg);
 }
 
+/* Media queries for responsive design */
 @media (max-width: 768px) {
     .menu-button-container {
         display: flex;
@@ -219,6 +233,7 @@ body {
     }
 }
 
+/* Styles for menu button bars */
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -241,16 +256,26 @@ body {
     margin-top: 8px;
 }
 
+/* Heading styles */
 .welcome-heading h1 {
-    text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
-    font-family:"Playfair Display", serif; font-weight:400;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
 }
+
 .welcome-heading h1 span {
     margin-top: 5px;
-    font-size:15px; color:#444; word-spacing:1px;
-    letter-spacing:2px;
-    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
-
+    font-size: 15px;
+    color: #444;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     grid-template-rows: 27px 0;
@@ -258,20 +283,23 @@ body {
     align-items: center;
 }
 
-.welcome-heading h1 span:after,.welcome-heading h1 span:before {
+.welcome-heading h1 span:after,
+.welcome-heading h1 span:before {
     content: " ";
     display: block;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     height: 5px;
-    background-color:#f8f8f8;
+    background-color: #f8f8f8;
 }
 
 .welcome-heading h2 {
     text-align: center;
-    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: 1px;
     text-transform: uppercase;
-
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     grid-template-rows: 27px 0;
@@ -279,16 +307,17 @@ body {
     align-items: center;
 }
 
-.welcome-heading h2:after,.welcome-heading h2:before {
+.welcome-heading h2:after,
+.welcome-heading h2:before {
     content: " ";
     display: block;
     border-bottom: 1px solid #c50000;
     border-top: 1px solid #c50000;
     height: 5px;
-    background-color:#f8f8f8;
+    background-color: #f8f8f8;
 }
 
-
+/* Styles for feature boxes */
 .feature-box {
     font-family: serif;
     background-color: #f7f7f7;
@@ -301,10 +330,11 @@ body {
 
 .feature-box h3 {
     font-size: 24px;
-    color:#222;
+    color: #222;
     margin-bottom: 10px;
 }
 
+/* Styles for quote boxes */
 .quote-box {
     font-family: serif;
     background-color: #fff;
@@ -327,6 +357,7 @@ body {
     color: #666;
 }
 
+/* Styles for benefits boxes */
 .benefits-box {
     font-family: serif;
     background-color: #f7f7f7;
@@ -339,7 +370,7 @@ body {
 
 .benefits-box h3 {
     font-size: 24px;
-    color:#222;
+    color: #222;
     margin-bottom: 10px;
 }
 
@@ -354,6 +385,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Styles for contact boxes */
 .contact-box {
     font-family: serif;
     background-color: #fff;
@@ -366,7 +398,7 @@ body {
 
 .contact-box h3 {
     font-size: 24px;
-    color:#222;
+    color: #222;
     margin-bottom: 10px;
 }
 
@@ -390,6 +422,7 @@ body {
     background-color: #4c9e9e;
 }
 
+/* Styles for image grid and overlay */
 .heading {
     font-weight: bold;
 }
@@ -411,14 +444,13 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 2px solid transparent; /* Add a transparent border by default */
-    border-radius: 10px; /* Adjust the value to control the amount of rounding */
+    border: 2px solid transparent;
+    border-radius: 10px;
 }
 
-
 .image-grid img:hover {
-    border-color: midnightblue;; /* Change the border color on hover */
-    border-radius: 5px; /* Add rounded corners if desired */
+    border-color: midnightblue;
+    border-radius: 5px;
 }
 
 .image-container button {
@@ -451,30 +483,32 @@ body {
     border-radius: 5px;
 }
 
+/* Media queries for responsive image grid */
 @media (min-width: 1200px) {
     .image-grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 1199px) {
     .image-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium-sized screens */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 992px) {
     .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .image-grid {
-        grid-template-columns: repeat(1, 1fr); /* 1 column for the smallest screens */
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
+/* Styles for the footer */
 footer {
     background: linear-gradient(45deg, #333, #555, #777, #999, #BBB);
     color: #ffffff;
@@ -482,6 +516,7 @@ footer {
     padding: 10px;
 }
 
+/* Styles for social media icons */
 .fa:hover {
     opacity: 0.9;
 }
@@ -504,30 +539,15 @@ footer {
 .fa {
     padding: 25px;
     font-size: 40px;
-    /*width: 60px;*/
-    text-decoration: none;
-    /*margin: 5px 5px;*/
 }
 
-.cover {
-    margin: 40px;
-    position: relative;
-    z-index: 0;
-    transition: box-shadow 0.3s;
-}
-
-.cover img {
-    object-fit: cover;
-    border: 2px solid transparent;
-    border-radius: 10px;
-}
-
+/* Responsive styles for smaller cover images */
 @media (max-width: 768px) {
     .cover {
         width: 80%;
     }
 
     .cover img {
-        width: 100%; /* Make the image within the cover div 100% width to fit the smaller cover */
+        width: 100%;
     }
 }
