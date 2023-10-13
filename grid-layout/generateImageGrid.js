@@ -34,10 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const priceOverlay = document.createElement("div");
         priceOverlay.classList.add("price-overlay");
         let randPrice = Math.floor(Math.random() * (5000000 - 1000000 + 1) + 1000000)
-        priceOverlay.textContent = "$" + randPrice;
+        randPrice = Math.floor(randPrice / 10000) * 10000;
+        priceOverlay.textContent = "$" + randPrice.toLocaleString();
 
         const button = document.createElement("button");
-        button.textContent = "Contact Seller";
+        button.textContent = "I'm interested!";
 
         // Append image, price overlay, and button to the image container
         imageContainer.appendChild(image);

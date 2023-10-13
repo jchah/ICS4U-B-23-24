@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Modern Styles - LuxLivingSpaces.com</title>
 </head>
 <body>
@@ -11,15 +12,15 @@
 <section class="navbar">
     <div class="logo"><a href="index.html" class="logo-link">LuxLivingSpaces.com</a></div>
     <input id="menu-toggle" type="checkbox" />
-    <label class="menu-button-container" for="menu-toggle">
-        <span class="menu-button"></span>
+    <label class='menu-button-container' for="menu-toggle">
+        <span class='menu-button'></span>
     </label>
     <ul class="menu">
-        <!-- Navigation links (copied from index.html) -->
+        <!-- Navigation links -->
         <li><a href="about.html">About</a></li>
         <li class="services">
             <a>Styles</a>
-            <!-- Dropdown for Styles (copied from index.html) -->
+            <!-- Dropdown for Styles -->
             <ul class="dropdown">
                 <li><a href="modern.html">Modern</a></li>
                 <li><a href="traditional.html">Traditional</a></li>
@@ -28,16 +29,21 @@
         </li>
         <li class="services">
             <a>Socials</a>
-            <!-- Dropdown for Social Links (copied from index.html) -->
+            <!-- Dropdown for Social Links -->
             <ul class="dropdown">
-                <li><a href="https://instagram.com">Instagram</a></li>
-                <li><a href="https://facebook.com">Facebook</a></li>
-                <li><a href="https://twitter.com">Twitter</a></li>
+                <li><a href="https://reddit.com">Reddit</a></li>
+                <li><a href="https://pinterest.com">Pinterest</a></li>
+                <li><a href="https://linkedin.com">Linkedin</a></li>
             </ul>
         </li>
         <li><a href="contact.html">Contact Us</a></li>
     </ul>
 </section>
+
+<div class="welcome-heading">
+    <h2>Modern styles</h2>
+</div>
+
 <!-- Image grid -->
 <div class="image-grid">
 
@@ -45,6 +51,10 @@
 
 <footer>
     <p>&copy; 2023 LuxLivingSpaces.com</p>
+
+    <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+    <a href="https://pinterest.com" class="fa fa-pinterest"></a>
+    <a href="https://reddit.com" class="fa fa-reddit"></a>
 </footer>
 
 <script src="generateImageGrid.js"></script>
