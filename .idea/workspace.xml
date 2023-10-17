@@ -4,15 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="about page update">
+    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="commented files via chatGPT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProject/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProject/apartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/apartments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProject/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProject/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProject/modern.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/modern.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProject/traditional.html" beforeDir="false" afterPath="$PROJECT_DIR$/websiteProject/traditional.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Casual_icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Class_icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Special_icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Tournament_icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/websiteProject.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,25 +70,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/jchah/IdeaProjects/ICS4U-B-23-24",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jchah/IdeaProjects/ICS4U-B-23-24&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jchah\IdeaProjects\ICS4U-B-23-24\grid-layout\img" />
@@ -114,7 +125,8 @@
       <workItem from="1696947601121" duration="2051000" />
       <workItem from="1697025163945" duration="6000" />
       <workItem from="1697025854983" duration="401000" />
-      <workItem from="1697143820276" duration="18908000" />
+      <workItem from="1697143820276" duration="20906000" />
+      <workItem from="1697545924503" duration="739000" />
     </task>
     <task id="LOCAL-00001" summary="rgba -&gt; 0, 0, 0, 2">
       <option name="closed" value="true" />
@@ -220,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697205721207</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="commented files via chatGPT">
+      <option name="closed" value="true" />
+      <created>1697210167421</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697210167421</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +260,7 @@
     <MESSAGE value="Added icon, changed name, fixed some warnings." />
     <MESSAGE value="moved js file" />
     <MESSAGE value="about page update" />
-    <option name="LAST_COMMIT_MESSAGE" value="about page update" />
+    <MESSAGE value="commented files via chatGPT" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented files via chatGPT" />
   </component>
 </project>
