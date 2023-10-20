@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="commented files via chatGPT">
+    <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="removed unneeded project">
+      <change afterPath="$PROJECT_DIR$/bulma-example/tutorial.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bulma-project/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bulma-project/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bulma-project/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Casual_icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Class_icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Special_icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/Tournament_icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/img/tournament4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/websiteProjectAlpha/websiteProject.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -126,7 +112,8 @@
       <workItem from="1697025163945" duration="6000" />
       <workItem from="1697025854983" duration="401000" />
       <workItem from="1697143820276" duration="20906000" />
-      <workItem from="1697545924503" duration="739000" />
+      <workItem from="1697545924503" duration="3717000" />
+      <workItem from="1697826340475" duration="1092000" />
     </task>
     <task id="LOCAL-00001" summary="rgba -&gt; 0, 0, 0, 2">
       <option name="closed" value="true" />
@@ -240,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697210167421</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="removed unneeded project">
+      <option name="closed" value="true" />
+      <created>1697546717354</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1697546717354</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +256,7 @@
     <MESSAGE value="moved js file" />
     <MESSAGE value="about page update" />
     <MESSAGE value="commented files via chatGPT" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented files via chatGPT" />
+    <MESSAGE value="removed unneeded project" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unneeded project" />
   </component>
 </project>
