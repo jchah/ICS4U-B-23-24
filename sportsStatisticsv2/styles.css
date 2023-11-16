@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+#scoreForm {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#scoreForm input,
+#scoreForm button {
+    margin: 10px;
+    padding: 10px;
+}
+
+#standingsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#standingsTable, #standingsTable th, #standingsTable td {
+    border: 1px solid #ddd;
+}
+
+#standingsTable th, #standingsTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+#standingsTable th {
+    background-color: #333;
+    color: white;
+}
+
+#standingsTable tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+/* Add this to your styles.css file */
+
+#sortOrder {
+    margin: 10px;
+    padding: 10px;
+}
