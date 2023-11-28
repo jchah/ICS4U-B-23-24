@@ -1,48 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Head content including Bulma CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Results</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+  <style>
+    .table-container {
+      font-size: 1.25em;
+    }
+    .title {
+      font-size: 2em;
+    }
+    .table {
+      width: 100%;
+    }
+    .sort-arrow {
+      margin-left: 5px;
+      font-size: 0.8em;
+    }
+  </style>
 </head>
 <body>
+
 <section class="section">
   <div class="container">
-    <h1 class="title" id="teamName">Team Games</h1>
-    <table class="table is-striped is-fullwidth">
-      <thead>
-      <tr>
-        <th>Opponent</th>
-        <th>Score</th>
-      </tr>
-      </thead>
-      <tbody id="gamesList">
-      <!-- Games will be populated here -->
-      </tbody>
-    </table>
+    <h1 class="title">Team Results</h1>
+    <div class="container">
+      <button id="backButton" class="button is-info">Back to Standings</button>
+    </div>
+
+    <br>
+    <div class="columns is-multiline">
+      <div class="column is-three-quarters"> <!-- Adjusted column size -->
+        <div class="card mb-4">
+          <div class="card-content">
+            <div class="table-container"> <!-- Added for font size -->
+              <table class="table is-striped is-fullwidth">
+                <thead>
+                <tr>
+                  <th id="sortTeam1">Team 1</th>
+                  <th id="sortScore1">Score 1</th>
+                  <th id="sortTeam2">Team 2</th>
+                  <th id="sortScore2">Score 2</th>
+                  <th id="sortDate">Date</th>
+                </tr>
+                </thead>
+                <tbody id="resultsBody">
+                <!-- Table rows will be dynamically added here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-full">
+        <div id="pagination" class="buttons is-centered">
+          <!-- Buttons for pagination will be dynamically added here -->
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
 <script>
-  function getTeamNameFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    return params.get('team');
+  let games = [];
+  let currentPage = 1;
+  const gamesPerPage = 5;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const team = urlParams.get('team');
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPage);
+  } else {
+    initPage();
   }
 
-  function displayTeamGames(teamName) {
-    const games = JSON.parse(localStorage.getItem('games')) || [];
-    let filteredGames = games.filter(game => game.team1 === teamName || game.team2 === teamName);
+  function initPage() {
+    games = JSON.parse(urlParams.get('games') || '[]');
+    displayGames();
+  }
 
-    let gamesList = document.getElementById('gamesList');
-    filteredGames.forEach(game => {
-      let row = gamesList.insertRow();
-      let opponent = game.team1 === teamName ? game.team2 : game.team1;
-      let score = game.team1 === teamName ? `${game.score1} - ${game.score2}` : `${game.score2} - ${game.score1}`;
-      row.insertCell(0).textContent = opponent;
-      row.insertCell(1).textContent = score;
+  function displayGames() {
+    const resultsBody = document.getElementById('resultsBody');
+    const paginationDiv = document.getElementById('pagination');
+
+    resultsBody.innerHTML = '';
+
+    const startIndex = (currentPage - 1) * gamesPerPage;
+    const endIndex = startIndex + gamesPerPage;
+
+    games.slice(startIndex, endIndex).forEach(game => {
+      const row = resultsBody.insertRow();
+      row.insertCell(0).textContent = game.team1;
+      row.insertCell(1).textContent = game.score1;
+      row.insertCell(2).textContent = game.team2;
+      row.insertCell(3).textContent = game.score2;
+      row.insertCell(4).textContent = game.gameDate;
     });
+
+    setupPagination(paginationDiv);
   }
 
-  let teamName = getTeamNameFromURL();
-  document.getElementById('teamName').textContent = `${teamName}'s Games`;
-  displayTeamGames(teamName);
+  function setupPagination(paginationDiv) {
+    paginationDiv.innerHTML = '';
+    const totalPages = Math.ceil(games.length / gamesPerPage);
+
+    if (currentPage > 1) {
+      paginationDiv.appendChild(createPaginationButton('Previous', currentPage - 1));
+    }
+
+    for (let i = 1; i <= totalPages; i++) {
+      paginationDiv.appendChild(createPaginationButton(i, i));
+    }
+
+    if (currentPage < totalPages) {
+      paginationDiv.appendChild(createPaginationButton('Next', currentPage + 1));
+    }
+  }
+
+  function createPaginationButton(label, page) {
+    const button = document.createElement('button');
+    button.textContent = label;
+    button.classList.add('button', 'is-link');
+    button.addEventListener('click', () => {
+      currentPage = page;
+      displayGames();
+    });
+    return button;
+  }
+
+  document.getElementById('backButton').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+
+  // Move these event listeners outside of the sortGames function
+  document.getElementById('sortTeam1').addEventListener('click', () => sortGames('team1'));
+  document.getElementById('sortTeam2').addEventListener('click', () => sortGames('team2'));
+  document.getElementById('sortScore1').addEventListener('click', () => sortGames('score1'));
+  document.getElementById('sortScore2').addEventListener('click', () => sortGames('score2'));
+  document.getElementById('sortDate').addEventListener('click', () => sortGames('date'));
+
+
+  let sortDirection = { team1: 'desc', team2: 'desc', score1: 'desc', score2: 'desc', date: 'desc' };
+
+  function sortGames(column) {
+    games.sort((a, b) => {
+      let valA, valB;
+
+      if (column === 'team1' || column === 'team2') {
+        valA = a[column].toLowerCase();
+        valB = b[column].toLowerCase();
+        return sortDirection[column] === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+      } else if (column === 'score1' || column === 'score2') {
+        valA = parseInt(a[column], 10);
+        valB = parseInt(b[column], 10);
+        return sortDirection[column] === 'asc' ? valA - valB : valB - valA;
+      } else if (column === 'date') {
+        // Parse the date strings to Date objects and compare their timestamps
+        valA = new Date(a.gameDate);
+        valB = new Date(b.gameDate);
+        return sortDirection[column] === 'asc' ? valA - valB : valB - valA;
+      }
+    });
+
+    sortDirection[column] = sortDirection[column] === 'asc' ? 'desc' : 'asc';
+    displayGames();
+  }
+
+
 </script>
+
 </body>
 </html>
