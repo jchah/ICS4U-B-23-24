@@ -1,49 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+/* Styles for sort arrows */
+#standingsTable th.sort-asc::after {
+    content: ' ▲'; /* Unicode character for upward arrow */
 }
 
-h1 {
-    text-align: center;
+#standingsTable th.sort-desc::after {
+    content: ' ▼'; /* Unicode character for downward arrow */
 }
 
-#scoreForm {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#scoreForm input,
-#scoreForm button {
-    margin: 10px;
-    padding: 10px;
-}
-
-#standingsTable {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-#standingsTable, #standingsTable th, #standingsTable td {
-    border: 1px solid #ddd;
-}
-
-#standingsTable th, #standingsTable td {
-    padding: 10px;
-    text-align: left;
-}
-
-#standingsTable th {
-    background-color: #333;
-    color: white;
-}
-
-#standingsTable tbody tr:nth-child(odd) {
-    background-color: #eee;
-}
-
-#sortOrder {
-    margin: 10px;
-    padding: 10px;
-}

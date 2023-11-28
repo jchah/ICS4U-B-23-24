@@ -20,6 +20,46 @@ document.getElementById('scoreForm').addEventListener('submit', function(e) {
     displayStandings();
 });
 
+document.getElementById('clearTable').addEventListener('click', function() {
+    clearStandings();
+    displayStandings();
+});
+
+let currentSort = { column: null, order: 'ASC' };
+
+// Add event listeners to table headers for sorting
+document.querySelectorAll('#standingsTable th').forEach((header, index) => {
+    header.addEventListener('click', function() {
+        let column = getColumnKeyByIndex(index);
+        sortTableByColumn(column, this);
+    });
+});
+
+function getColumnKeyByIndex(index) {
+    const columnKeys = ['team', 'played', 'won', 'drawn', 'lost', 'for', 'against', 'gd'];
+    return columnKeys[index] || null;
+}
+
+function sortTableByColumn(column, headerElement) {
+    // Toggle sort order or set to 'ASC' if new column
+    currentSort.order = (currentSort.column === column && currentSort.order === 'ASC') ? 'DESC' : 'ASC';
+    currentSort.column = column;
+
+    // Update the class on the header based on the sort order
+    document.querySelectorAll('#standingsTable th').forEach(header => {
+        header.classList.remove('sort-asc', 'sort-desc');
+    });
+    headerElement.classList.add(currentSort.order === 'ASC' ? 'sort-asc' : 'sort-desc');
+
+    displayStandings();
+}
+
+function storeGameDetails(team1, score1, team2, score2) {
+    let games = JSON.parse(localStorage.getItem('games')) || [];
+    games.push({team1, score1, team2, score2});
+    localStorage.setItem('games', JSON.stringify(games));
+}
+
 function updateStandings(team1, score1, team2, score2) {
     // Get standings from localStorage or initialize if not present
     let standings = JSON.parse(localStorage.getItem('standings')) || {};
@@ -54,47 +94,36 @@ function updateStandings(team1, score1, team2, score2) {
 
     // Save the updated standings back to localStorage
     localStorage.setItem('standings', JSON.stringify(standings));
+    storeGameDetails(team1, score1, team2, score2);
 }
-
-document.getElementById('clearTable').addEventListener('click', function() {
-    clearStandings();
-    displayStandings();
-});
 
 function clearStandings() {
     localStorage.removeItem('standings');
 }
 
-document.getElementById('sortOrder').addEventListener('change', function() {
-    displayStandings();
-});
-
-function getSortedTeams(standings, sortOrder) {
-    return Object.keys(standings).sort((a, b) => {
-        let pointsDiff = (standings[b].won * 3 + standings[b].drawn) - (standings[a].won * 3 + standings[a].drawn);
-        if (pointsDiff) return sortOrder === 'ASC' ? -pointsDiff : pointsDiff;
-        let gdDiff = standings[b].gd - standings[a].gd;
-        if (gdDiff) return sortOrder === 'ASC' ? -gdDiff : gdDiff;
-        return sortOrder === 'ASC' ? standings[a].for - standings[b].for : standings[b].for - standings[a].for;
-    });
-}
-
 function displayStandings() {
     let standings = JSON.parse(localStorage.getItem('standings')) || {};
-    let sortOrder = document.getElementById('sortOrder').value;
     let standingsTableBody = document.getElementById('standingsTable').getElementsByTagName('tbody')[0];
 
     // Clear existing table rows
     standingsTableBody.innerHTML = '';
 
-    // Get sorted teams based on selected sort order
-    let sortedTeams = getSortedTeams(standings, sortOrder);
+    // Get sorted teams based on currentSort
+    let sortedTeams = getSortedTeams(standings);
 
     // Create a table row for each team in the standings
     sortedTeams.forEach(team => {
         let row = standingsTableBody.insertRow();
         let data = standings[team];
-        row.insertCell(0).textContent = team;
+
+        // Create a clickable link for the team name
+        let teamNameCell = row.insertCell(0);
+        let teamNameLink = document.createElement('a');
+        teamNameLink.href = `#`; // You can put the actual link to your subpage here
+        teamNameLink.textContent = team;
+        teamNameLink.onclick = function() { goToTeamPage(team); }; // Add an onclick event to handle navigation
+        teamNameCell.appendChild(teamNameLink);
+
         row.insertCell(1).textContent = data.played;
         row.insertCell(2).textContent = data.won;
         row.insertCell(3).textContent = data.drawn;
@@ -102,6 +131,50 @@ function displayStandings() {
         row.insertCell(5).textContent = data.for;
         row.insertCell(6).textContent = data.against;
         row.insertCell(7).textContent = data.gd;
+    });
+}
+
+function goToTeamPage(teamName) {
+    // Logic to navigate to the team's subpage
+    // For example, setting window.location to the team's page URL
+    let teamPageUrl = `team_page.html?team=${encodeURIComponent(teamName)}`;
+    window.location.href = teamPageUrl;
+}
+
+// Rest of your code...
+
+
+function getSortedTeams(standings) {
+    // Sorting logic based on currentSort.column and currentSort.order
+    return Object.keys(standings).sort((a, b) => {
+        let compareA, compareB;
+
+        switch(currentSort.column) {
+            case 'team':
+                compareA = a.toLowerCase();
+                compareB = b.toLowerCase();
+                break;
+            case 'played':
+            case 'won':
+            case 'drawn':
+            case 'lost':
+            case 'for':
+            case 'against':
+            case 'gd':
+                compareA = standings[a][currentSort.column];
+                compareB = standings[b][currentSort.column];
+                break;
+            default:
+                return 0;
+        }
+
+        if (compareA < compareB) {
+            return currentSort.order === 'ASC' ? -1 : 1;
+        }
+        if (compareA > compareB) {
+            return currentSort.order === 'ASC' ? 1 : -1;
+        }
+        return 0;
     });
 }
 
