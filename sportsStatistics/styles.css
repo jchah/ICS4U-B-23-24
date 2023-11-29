@@ -7,3 +7,73 @@
     content: ' ▼'; /* Unicode character for downward arrow */
 }
 
+.buttons {
+    display: flex;
+    width: 100%; /* Ensure the container takes the full width */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button.is-half {
+    width: 50%; /* Each button takes up half the width */
+    background-color: white; /* Set the default background to white */
+    color: black; /* Set the text color to black */
+    border: 1px solid #ddd; /* Add a light grey border */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Style for when a button is active/pressed */
+.button.is-half.is-active {
+    background-color: #f0f0f0; /* Light grey to indicate it is pressed */
+    border-color: #ccc; /* Darker border color for pressed effect */
+}
+
+.field.is-grouped-right {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.field.is-grouped-right .control:not(:last-child) {
+    margin-right: 10px;
+}
+
+.field.is-grouped-right label {
+    align-self: center;
+    margin-right: 5px;
+}
+
+#dateRangeFilterControl {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add some space between elements */
+}
+
+#dateRangeFilterControl .control {
+    flex: 1 1 auto;
+    margin-bottom: 10px; /* Add space between wrapped items */
+}
+
+#dateRangeFilterControl label {
+    font-size: 0.8rem; /* Adjust the size as needed */
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    /* This will stack the form inputs vertically on smaller screens */
+    .field, .control {
+        width: 100%;
+    }
+
+    /* Adjust font sizes for smaller screens if needed */
+    .title, .table-container {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust sizes and padding for very small screens */
+    .title, .table-container {
+        font-size: 1.25rem;
+    }
+}
+

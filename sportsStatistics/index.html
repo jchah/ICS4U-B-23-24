@@ -29,6 +29,7 @@
             <div class="field">
                 <input class="input" type="date" id="gameDate" placeholder="Game Date" required>
             </div>
+            <br>
             <div class="field is-grouped">
                 <p class="control">
                     <button class="button is-primary" type="submit">Submit Score</button>
@@ -36,6 +37,30 @@
                 <p class="control">
                     <button class="button is-light" type="button" id="clearTable">Clear Table</button>
                 </p>
+
+                <div class="field is-grouped is-grouped-right">
+                    <div class="control">
+                        <input class="input" type="text" id="filterTeam" placeholder="Filter by Team">
+                    </div>
+
+                    <div class="control" id="dateRangeFilterControl">
+                        <label for="filterStartDate">Start Date:</label>
+                        <input class="input" type="date" id="filterStartDate">
+
+                        <label for="filterEndDate">End Date:</label>
+                        <input class="input" type="date" id="filterEndDate">
+                    </div>
+
+
+                    <div class="control">
+                        <button class="button is-link" type="button" id="applyFilters">Apply Filters</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons has-addons">
+                <button class="button is-half" type="button" id="showStandings">Standings</button>
+                <button class="button is-half" type="button" id="showCards">Cards</button>
             </div>
         </form>
 
@@ -56,6 +81,10 @@
             <!-- Standings will be populated here -->
             </tbody>
         </table>
+
+        <div id="cardsView" style="display: none;">
+            <!-- Cards content will be populated here -->
+        </div>
     </div>
 </section>
 <script src="script.js"></script>

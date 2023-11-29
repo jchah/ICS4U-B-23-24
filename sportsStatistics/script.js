@@ -23,9 +23,14 @@
     });
 
     document.getElementById('clearTable').addEventListener('click', function() {
-        clearStandings();
-        displayStandings();
         localStorage.clear();
+        clearStandings();
+        clearCards();
+        displayStandings(); // Update the standings view
+        if (document.getElementById('cardsView').style.display !== 'none') {
+            // If the cards view is currently displayed, update it as well
+            populateCardsView();
+        }
     });
 
     let currentSort = { column: null, order: 'ASC' };
@@ -38,6 +43,159 @@
         });
     });
 
+    document.getElementById('showStandings').addEventListener('click', function() {
+        setActiveButton(this);
+        toggleView('standings');
+    });
+
+    document.getElementById('showCards').addEventListener('click', function() {
+        setActiveButton(this);
+        toggleView('cards');
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        let dateFilterControl = document.getElementById('dateFilterControl');
+        if (dateFilterControl) dateFilterControl.style.display = 'none';
+        populateCardsView(); // or displayStandings(); depending on what you want to show initially
+    });
+
+    function setActiveButton(activeButton) {
+        document.getElementById('showStandings').classList.remove('is-active');
+        document.getElementById('showCards').classList.remove('is-active');
+        activeButton.classList.add('is-active');
+    }
+
+    function clearCards() {
+        // Clear the cards view HTML content
+        let cardsView = document.getElementById('cardsView');
+        if (cardsView) {
+            cardsView.innerHTML = '<p class="title is-4">No games to display</p>';
+        }
+    }
+
+    function toggleView(view) {
+        let standingsTable = document.getElementById('standingsTable');
+        let cardsView = document.getElementById('cardsView');
+        let dateRangeFilterControl = document.getElementById('dateRangeFilterControl');
+
+        if (view === 'standings') {
+            standingsTable.style.display = '';
+            cardsView.style.display = 'none';
+            if (dateRangeFilterControl) dateRangeFilterControl.style.display = 'none';
+        } else {
+            standingsTable.style.display = 'none';
+            cardsView.style.display = '';
+            populateCardsView();
+            if (dateRangeFilterControl) dateRangeFilterControl.style.display = 'flex';
+        }
+    }
+
+    function populateCardsView() {
+        let cardsView = document.getElementById('cardsView');
+        let startDate = document.getElementById('filterStartDate').value;
+        let endDate = document.getElementById('filterEndDate').value;
+        let teamFilter = document.getElementById('filterTeam').value.toLowerCase();
+        cardsView.innerHTML = ''; // Clear previous content
+
+        // Retrieve and parse the games array from localStorage
+        let games = JSON.parse(localStorage.getItem('games')) || [];
+
+        let startDateObj = startDate ? new Date(startDate) : new Date(0); // Unix epoch start if no start date
+        let endDateObj = endDate ? new Date(endDate) : new Date(); // Current date if no end date
+
+        games = games.filter(function(game) {
+            let gameDate = new Date(game.gameDate);
+            return (gameDate >= startDateObj && gameDate <= endDateObj) &&
+                (!teamFilter || game.team1.toLowerCase().includes(teamFilter) || game.team2.toLowerCase().includes(teamFilter));
+        });
+
+        // Loop through the games array to create card elements
+        games.forEach(function(game) {
+            let date = new Date(game.gameDate);
+            let formattedDate = date.getTime() ? date.toLocaleDateString() : 'Unknown date';
+
+            let card = document.createElement('div');
+            card.className = 'card';
+
+            let cardContent = document.createElement('div');
+            cardContent.className = 'card-content';
+
+            let media = document.createElement('div');
+            media.className = 'media';
+
+            let mediaContent = document.createElement('div');
+            mediaContent.className = 'media-content';
+
+            let title = document.createElement('p');
+            title.className = 'title is-4';
+
+            let team1Link = document.createElement('a');
+            team1Link.href = "#";
+            team1Link.textContent = game.team1;
+            team1Link.onclick = function() { goToTeamPage(game.team1); };
+
+            let team2Link = document.createElement('a');
+            team2Link.href = "#";
+            team2Link.textContent = game.team2;
+            team2Link.onclick = function() { goToTeamPage(game.team2); };
+
+            let vsText = document.createTextNode(' vs ');
+
+            let score = document.createElement('p');
+            score.className = 'subtitle is-6';
+            score.textContent = `Score: ${game.score1} - ${game.score2}`;
+
+            let dateElement = document.createElement('p');
+            dateElement.className = 'subtitle is-6';
+            dateElement.textContent = `Date: ${formattedDate}`;
+
+            // Append the team links and 'vs' text to the title paragraph
+            title.appendChild(team1Link);
+            title.appendChild(vsText);
+            title.appendChild(team2Link);
+
+            // Append title, score, and date to mediaContent
+            mediaContent.appendChild(title);
+            mediaContent.appendChild(score);
+            mediaContent.appendChild(dateElement);
+
+            // Append mediaContent to media
+            media.appendChild(mediaContent);
+
+            // Append media to cardContent
+            cardContent.appendChild(media);
+
+            // Append cardContent to card
+            card.appendChild(cardContent);
+
+            // Append card to cardsView
+            cardsView.appendChild(card);
+        });
+
+        // If there are no games, display a message
+        if (games.length === 0) {
+            cardsView.innerHTML = '<p class="title is-4">No games to display</p>';
+        }
+    }
+
+    // Call populateCardsView on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        let dateRangeFilterControl = document.getElementById('dateRangeFilterControl');
+        if (dateRangeFilterControl) {
+            dateRangeFilterControl.style.display = 'none';
+        }
+
+        // Make the Standings button appear selected
+        let standingsButton = document.getElementById('showStandings');
+        if (standingsButton) {
+            standingsButton.classList.add('is-active');
+        }
+
+        // Load the initial view
+        toggleView('standings'); // or 'cards' depending on your default view
+        populateCardsView();
+    });
+
     function getColumnKeyByIndex(index) {
         const columnKeys = ['team', 'played', 'won', 'drawn', 'lost', 'for', 'against', 'gd'];
         return columnKeys[index] || null;
@@ -48,14 +206,16 @@
         currentSort.order = (currentSort.column === column && currentSort.order === 'ASC') ? 'DESC' : 'ASC';
         currentSort.column = column;
 
-        // Update the class on the header based on the sort order
+        // Update header class based on sort order
         document.querySelectorAll('#standingsTable th').forEach(header => {
             header.classList.remove('sort-asc', 'sort-desc');
         });
         headerElement.classList.add(currentSort.order === 'ASC' ? 'sort-asc' : 'sort-desc');
 
+        // Refresh the table with new sorting
         displayStandings();
     }
+
 
     function storeGameDetails(team1, score1, team2, score2, gameDate) {
         let games = JSON.parse(localStorage.getItem('games')) || [];
@@ -105,16 +265,17 @@
         localStorage.removeItem('standings');
     }
 
-
+    document.getElementById('applyFilters').addEventListener('click', function() {
+        displayStandings();
+        populateCardsView();
+    });
 
     function displayStandings() {
         let standings = JSON.parse(localStorage.getItem('standings')) || {};
         let standingsTableBody = document.getElementById('standingsTable').getElementsByTagName('tbody')[0];
 
-        // Clear existing table rows
-        standingsTableBody.innerHTML = '';
+        standingsTableBody.innerHTML = ''; // Clear existing rows
 
-        // Get sorted teams based on currentSort
         let sortedTeams = getSortedTeams(standings);
 
         // Create a table row for each team in the standings
@@ -154,37 +315,27 @@
         window.location.href = `team_page.html${queryParams}`;
     }
 
-    // Rest of your code...
-
-
     function getSortedTeams(standings) {
-        // Sorting logic based on currentSort.column and currentSort.order
+        // Extract team names and sort them based on the currentSort settings
         return Object.keys(standings).sort((a, b) => {
-            let compareA, compareB;
+            let valueA, valueB;
 
-            switch(currentSort.column) {
-                case 'team':
-                    compareA = a.toLowerCase();
-                    compareB = b.toLowerCase();
-                    break;
-                case 'played':
-                case 'won':
-                case 'drawn':
-                case 'lost':
-                case 'for':
-                case 'against':
-                case 'gd':
-                    compareA = standings[a][currentSort.column];
-                    compareB = standings[b][currentSort.column];
-                    break;
-                default:
-                    return 0;
+            // Determine the values to compare based on the current sorted column
+            if (currentSort.column === 'team') {
+                // Sorting by team name (string comparison)
+                valueA = a.toLowerCase();
+                valueB = b.toLowerCase();
+            } else {
+                // Sorting by numeric values of the column
+                valueA = standings[a][currentSort.column];
+                valueB = standings[b][currentSort.column];
             }
 
-            if (compareA < compareB) {
+            // Compare for ascending or descending order
+            if (valueA < valueB) {
                 return currentSort.order === 'ASC' ? -1 : 1;
             }
-            if (compareA > compareB) {
+            if (valueA > valueB) {
                 return currentSort.order === 'ASC' ? 1 : -1;
             }
             return 0;
