@@ -342,5 +342,6 @@
         });
     }
 
+
     // Display the standings when the page is loaded
     window.onload = displayStandings;

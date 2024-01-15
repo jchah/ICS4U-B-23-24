@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9859695e-a5f2-4d79-b08a-f4881e174922" name="Changes" comment="bulma login page">
-      <change afterPath="$PROJECT_DIR$/js-example/dynamicTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emailValidator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emailValidator/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordHuntSolver/src/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordHuntSolver/src/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordHuntSolver/src/words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sportsStatistics/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/sportsStatistics/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +117,7 @@
       <workItem from="1697826340475" duration="1612000" />
       <workItem from="1698067936884" duration="1692000" />
       <workItem from="1698238073133" duration="638000" />
+      <workItem from="1702388625364" duration="459000" />
     </task>
     <task id="LOCAL-00001" summary="rgba -&gt; 0, 0, 0, 2">
       <option name="closed" value="true" />
