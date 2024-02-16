@@ -331,6 +331,7 @@
                 valueB = standings[b][currentSort.column];
             }
 
+
             // Compare for ascending or descending order
             if (valueA < valueB) {
                 return currentSort.order === 'ASC' ? -1 : 1;
